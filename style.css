@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #99bc85;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+}
+
+h1 {
+  background-color: #faf1e6;
+  color: black;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  padding: 20px;
+  margin: 0 0 20px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.add-box {
+  background-color: #faf1e6;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-box h2 {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.add-box input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background-color: #faf1e6;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.add-box input.error {
+  border: 1px solid red;
+}
+
+.add-box input.error::placeholder {
+  color: red;
+}
+
+.add-box input:focus {
+  outline: none;
+}
+
+.add-box .add {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #a08963;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+.events .event {
+  background-color: #faf1e6;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.events .event h3 {
+  margin: 0 0 20px;
+}
+.events .event p {
+  display: flex;
+  justify-content: space-between;
+}
+.events .event p span {
+  color: #333;
+}
+.events .event p:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.event .settings {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.events .event button {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background-color: #a08963;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.events .event button:active {
+  animation: event 3s linear;
+}
+
+@keyframes event {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

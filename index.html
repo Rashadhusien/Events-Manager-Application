@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Events Manager</title>
+  </head>
+  <body>
+    <h1>Events Manager Application</h1>
+    <div class="container">
+      <div class="add-box">
+        <h2>Add Event</h2>
+        <input
+          type="text"
+          class="eventName"
+          placeholder="Event Name"
+          required
+        />
+
+        <input
+          type="text"
+          class="organizer"
+          placeholder="Event organizer"
+          required
+        />
+        <input
+          type="date"
+          class="eventDate"
+          placeholder="Event date"
+          required
+        />
+        <button class="add" onclick="addEvent()">Add Event</button>
+      </div>
+      <div class="events"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
